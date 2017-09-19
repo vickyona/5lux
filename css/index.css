@@ -133,3 +133,733 @@ html,body{
     text-align: center;
     color: #000;
 }
+
+.main_inner .hotstore_title {
+    overflow: hidden;
+}
+.hotstore_title img {
+    float: left;
+}
+ 
+.hotstore_title .hotarrowbtn {
+    float: right;
+    padding-top: 23px;
+    padding-right: 15px;
+}
+
+.hotstore_title .hotarrowbtn span {
+    display: inline-block;
+    width: 8px;
+    height: 15px;
+}
+
+
+.hotarrowbtn .hot_pre {
+    background: url(http://www.5lux.com/vendor/images/v30/share02.png) no-repeat -160px -384px;
+}
+
+.hotarrowbtn .hot_next {
+    background: url(http://www.5lux.com/vendor/images/v30/share02.png) no-repeat -180px -384px;
+    margin-left: 20px;
+}
+.main_inner .hotflag {
+    height: 180px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.hotflag .hotflagbox {
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+}
+.hotflag .hotflagbox li {
+    float: left;
+    width: 1210px;
+}
+.hotflagbox .hotflagson {
+    position: relative;
+    float: left;
+    width: 107px;
+    height: 55px;
+    padding: 14px 29px;
+    border: 1px solid #dfdfdf;
+    margin-right: 6px;
+    margin-bottom: 7px;
+}
+.hotflagbox .hotflagson img {
+    display: block;
+}
+
+.hotflagson img {
+    width: 107px;
+    height: 54px;
+}
+.hotflagbox .hotflagson .hotmiddle {
+    position: absolute;
+    left: 29px;
+    top: 14px;
+    opacity: 0;
+    width: 107px;
+    height: 42px;
+    padding-top: 12px;
+    background: #fff;
+}
+.hotmiddle .brandchnname {
+    font-size: 18px;
+    text-align: center;
+}
+.hotmiddle .blacksline {
+    text-align: center;
+    margin-top: 5px;
+}
+.hotmiddle .blacksline span {
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background: #000;
+}
+.hotflagbox .hotflagson .topline {
+    width: 0;
+    height: 1px;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    background: #000;
+}
+.hotflagbox .hotflagson .rightline {
+    width: 1px;
+    height: 0;
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    background: #000;
+}
+.hotflagbox .hotflagson .bottomline {
+    width: 0;
+    height: 1px;
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    background: #000;
+}
+
+.hotflagbox .hotflagson .leftline {
+    width: 1px;
+    height: 0;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    background: #000;
+}
+
+.storesame_title img {
+    display: block;
+}
+.storesame_link {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.storesame_link li {
+    float: left;
+    width: 398px;
+    height: 30px;
+     background-color: rgb(153, 153, 153);
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin-right: 8px;
+}
+.storesame_link li:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+.storesame {
+    overflow: hidden;
+    width: 100%;
+    height: 517px;
+    position: relative;
+}
+.storesame .storesame_box {
+    position: absolute;
+    left: 0;
+    width: 9999px;
+}
+.storesame_box li {
+    overflow: hidden;
+    float: left;
+}
+.storesame_box li .storesameb_left {
+    float: left;
+}
+.storesame_box li .storesameb_right {
+    float: left;
+    margin-left: 9px;
+}
+.storesameb_right .storesameb_top {
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+.storesameb_right .storesameb_top .storesame_top1 {
+    width: 222px;
+    height: 248px;
+    text-align: center;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    float: left;
+}
+.storesameb_top .storesame_top1 .storesametoptxt {
+    left: 0;
+    font-size: 13px;
+    color: #666;
+    display: inline-block;
+    position: relative;
+}
+.storesameb_top .storesame_top1 .storesametoptxt .enbrand {
+    color: #000;
+}
+.storesame_top1 .storesametoppic {
+    text-align: center;
+    position: relative;
+    right: 0;
+}
+.storesameb_top .storesame_top2 {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    text-align: center;
+    width: 367px;
+    height: 248px;
+    float: left;
+    margin-right: 7px;
+}
+.storesameb_top .storesame_top2 .storesametoptxt {
+    float: left;
+}
+
+.storesameb_top .storesame_top2 .storesametoptxt {
+    font-size: 13px;
+    margin-top: 20px;
+    margin-left: 70px;
+    color: #666;
+    display: inline-block;
+    position: relative;
+}
+.storesameb_top .storesame_top2 .storesametoptxt .enbrand {
+    color: #000;
+}
+.storesameb_top .storesame_top2 .storesametoppic {
+    float: left;
+    position: relative;
+}
+
+
+.storesametoppic2 {
+    margin-top: 28px;
+}
+.storesameb_right .storesameb_bottom {
+    overflow: hidden;
+}
+.storesameb_bottom .storesamebottom1 {
+    margin-right: 7px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 271px;
+    height: 255px;
+    overflow: hidden;
+}
+.storesamebottom1 .storesametoptxt {
+    text-align: center;
+    position: relative;
+}
+.storesamebottom1 .storesametoppic {
+    text-align: center;
+    position: relative;
+}
+.darwin_3colum {
+    width: 398px;
+    display: inline-block;
+    height: 520px;
+    overflow: hidden;
+    position: relative;
+}
+.darwin_3colum_one dl dd {
+    width: 100%;
+}
+
+.darwin_3colum_one dl dd, .darwin_3colum_one dl dt {
+    width: 398px;
+    display: block;
+    height: 520px;
+    overflow: hidden;
+}
+
+.imgCol1Hover .imageCover {
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid #FFF;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: scale(0,1);
+    -ms-transform: scale(0,1);
+    transform: scale(0,1);
+}
+
+
+.darwin_3colum_one dl dt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(http://www.5lux.com/vendor/images/v30/darwin_mask_bg.png);
+    display: none;
+}
+.darwin_3colum_one dl dt ul {
+    display: block;
+    width: 260px;
+    height: 120px;
+    padding-top: 20px;
+    margin: 190px auto;
+    font-size: 18px;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+.darwin_3colum_one dl dt ul li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 28px;
+    color: #fff;
+}
+
+
+.storesame_box li {
+    overflow: hidden;
+    float: left;
+}
+.darwin_3colum_one dl dt ul li b {
+    display: block;
+    width: 18px;
+    height: 3px;
+    background-color: #fff;
+    margin: 10px auto;
+}
+.fsize14 {
+    font-size: 14px;
+}
+.darwin_3colum_two {
+    clear: both;
+    float: none;
+    padding-bottom: 10px;
+    position: relative;
+}
+/* 购物中心 */
+.shopcenter {
+    width: 100%;
+    overflow: hidden;
+}
+.shopcenter li {
+    float: left;
+    width: 234px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 8px;
+}
+.shopcenter li .shopcenterbox {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 234px;
+    height: 100px;
+}
+.shopcenterbox .topbox {
+    width: 234px;
+    height: 50px;
+    line-height: 50px;
+    background: #999;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.shopcenterbox .bottombox {
+    width: 234px;
+    height: 40px;
+    padding: 5px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+.shopcenterbox .bottombox .border {
+    border: 1px solid #fff;
+    width: 223px;
+    height: 40px;
+}
+.shopcenterbox .bottombox .border .en {
+    margin-top: 10px;
+}
+/* 购物中心主题内容 */
+.goodstitle {
+    width: 100%;
+    overflow: hidden;
+}
+.goodstitle .txt {
+    float: left;
+}
+.goodstitle .rightbtn {
+    float: right;
+    overflow: hidden;
+    height: 60px;
+    line-height: 60px;
+}
+.goodstitle .rightbtn:hover span{
+    color: #c8a985;
+}
+.goodstitle .rightbtn .icon {
+    float: right;
+    background: url(http://www.5lux.com/vendor/images/v30/share02.png) no-repeat -470px -360px;
+    width: 18px;
+    height: 60px;
+    margin-left: 6px;
+}
+.goodstitle .rightbtn .moretxt {
+    float: right;
+    font-size: 16px;
+}
+
+
+.goods .goods1 {
+    float: left;
+    width: 220px;
+    height: 366px;
+    border: 1px solid #ccc;
+    padding: 0 9px;
+    padding-top: 4px;
+    margin-right: 8px;
+}
+.goods1 .goodslinks {
+    overflow: hidden;
+    border-bottom: 1px dashed #d4d4d4;
+    padding-bottom: 16px;
+}
+.goodslinks li {
+    float: left;
+    line-height: 36px;
+    width: 110px;
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+}
+.goods1 .slider {
+    overflow: hidden;
+    width: 100%;
+    height: 150px;
+    margin-top: 14px;
+}
+.bx-wrapper {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+}
+.bx-wrapper .bx-viewport {
+    background: #fff;
+}
+.slider .sliderbox li {
+    width: 224px!important;
+    height: 114px;
+    overflow: hidden;
+}
+.bx-wrapper .bx-pager {
+    text-align: center;
+    /* font-size: .85em; */
+    font-family: Arial;
+    font-weight: bold;
+    color: #666;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    /* bottom: -30px; */
+    width: 100%;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: #c77f40;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #666;
+    text-indent: -9999px;
+    display: block;
+    height: .75em;
+    width: .75em;
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.slider .bx-wrapper .bx-controls-direction a {
+    width: 8px!important;
+    height: 14px!important;
+    top: 122%!important;
+}
+
+.slider .bx-wrapper .bx-prev {
+    left: 70px!important;
+    background: url(http://www.5lux.com/vendor/images/v30/share02.png) no-repeat -239px -384px!important;
+}
+.slider .bx-wrapper .bx-next {
+    right: 70px!important;
+    background: url(http://www.5lux.com/vendor/images/v30/share02.png) no-repeat -267px -384px!important;
+}
+.bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    outline: 0;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    z-index: 9999;
+}
+.bx-wrapper .bx-pager .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+    display: inline-block;
+}
+
+.goods .goods2 {
+    float: left;
+    width: 390px;
+    height: 370px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    margin-right: 8px;
+}
+.bx-wrapper {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+}
+._slider_bord {
+    width: 250px;
+    height: auto;
+    padding-bottom: 5px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -125px;
+    background: url(http://www.5lux.com/vendor/images/v30/darwin_mask_bgfff.png);
+}
+._slider_bord dl {
+    padding-top: 5px;
+}
+._slider_bord dl dd {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+}
+._slider_bord b {
+    width: 20px;
+    height: 2px;
+    display: block;
+    margin: 5px auto;
+    background-color: #000;
+}
+._slider_bord dl dt {
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    line-height: 17px;
+}
+.goods3 {
+    overflow: hidden;
+    height: 372px;
+}
+.goods3 .goods3pic1 {
+    width: 276px;
+    height: 189px;
+    margin-right: 7px;
+}
+
+.goods3 .goods3pic1, .goods3 .goods3pic2 {
+    float: left;
+}
+.goods3 .goods3pic2 {
+    width: 276px;
+    height: 189px;
+}
+.goods3 img {
+    border: 1px solid #ccc;
+}
+
+
+
+/* 主题活动部分 */
+.promotionbox .promotion1 {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.promotion1 .pro1pic1, .promotion2 .pro1pic1 {
+    width: 610px;
+    height: 295px;
+}
+
+.promotion1 .promotion1pic, .promotion2 .promotion1pic {
+    float: left;
+}
+.promotion1 .pro1pic2, .promotion2 .pro1pic2 {
+    width: 305px;
+    height: 295px;
+}
+.promotionbox .promotion2 {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.promotionbox .promotion3 {
+    overflow: hidden;
+}
+.promotion3 .proleft {
+    float: left;
+    overflow: hidden;
+    width: 610px;
+}
+.proleft .proleftpic {
+    float: left;
+    width: 203px;
+    height: 73px;
+}
+.proleftpic .proleftpicbox {
+    width: 192px;
+    height: 63px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+.proleftpicbox .topline {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 0;
+    height: 1px;
+    background: #000;
+}
+.proleftpicbox .rightline {
+    position: absolute;
+    bottom: 0;
+    right: -1px;
+    width: 1px;
+    height: 0;
+    background: #000;
+}
+.proleftpicbox .bottomline {
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    width: 0;
+    height: 1px;
+    background: #000;
+}
+.proleftpicbox .leftline {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: 1px;
+    height: 0;
+    background: #000;
+}
+.promotion3 .proright {
+    float: left;
+}
+
+/* 底部 */
+
+#footer_message_bg {
+    background: url(http://www.5lux.com/vendor/images/v30/footer_message_bg.jpg) center;
+    border-top: 1px solid #c9c9c9;
+}
+#footer_message {
+    width: 1210px;
+    height: 600px;
+    margin: 0 auto;
+}
+#footer_message .footer_message_top {
+    height: 116px;
+    border-bottom: 1px solid #c9c9c9;
+    clear: both;
+}
+.footer_message_top li {
+    width: 242px;
+    height: 64px;
+    float: left;
+    margin-top: 26px;
+}
+#footer_message a {
+    color: #333;
+    font-size: 12px;
+}
+.footer_message_top img {
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 5px;
+    cursor: pointer;
+    vertical-align: top;
+    float: left;
+}
+.footer_message_top01_r {
+    display: inline-block;
+    float: left;
+    width: 160px;
+    height: 48px;
+    margin-top: 8px;
+}
+.footer_message_top01_r .p1 {
+    font-weight: bold;
+}
+
+#footer_message .footer_message_ctr {
+    height: 283px;
+    clear: both;
+}
+.footer_message_ctr_l {
+    float: left;
+}
+.footer_message_ctr_l li {
+    width: 185px;
+    overflow: hidden;
+    float: left;
+}
+.footer_message_ctr_l .sp01 {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #000;
+}
+.footer_message_ctr_l span {
+    display: block;
+}
+.footer_message_ctr_l .pht_app {
+    width: 140px;
+    height: 283px;
+}
+.footer_message_ctr_l .pht_weibo {
+    width: 125px;
+    height: 283px;
+}
+#footer_message .footer_message_btm {
+    text-align: center;
+    color: #fff;
+}
+.footer_message_btm_t {
+    line-height: 66px;
+}
+#footer_message .footer_message_btm a {
+    color: #fff;
+}

@@ -1,4 +1,4 @@
-$(function(){
+;$(function(){
 	$(document).ajaxStart(function() {
 		$Img = $('<img src="http://img.5lux.com.cn/source/js/artdialog/icons/loading.gif">')
 		$("#register_btn").html($Img);

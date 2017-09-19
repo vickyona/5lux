@@ -1,4 +1,4 @@
-$(function () {
+;$(function () {
 	$(".h_mobile").click(function(){
 		location.href="http://www.5lux.com/download"
 	})

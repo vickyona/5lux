@@ -35,5 +35,10 @@ a:link {
     color: #757272;
     text-decoration: none;
 }
-
+.menu_inner a:link, .menu_inner a:visited {
+    color: #c8a985;
+}
+a:hover {
+    color: #b28247;
+}
 .clearfix::after{content: ""; display: block; visibility: hidden; clear: both; height: 0; overflow: hidden;}

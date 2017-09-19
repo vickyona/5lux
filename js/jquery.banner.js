@@ -1,4 +1,4 @@
-jQuery.fn.banner = function(options){
+;jQuery.fn.banner = function(options){
 	//找到第一张图片显示在最前面
 	options.imgs.css({
 		left:options.imgs.eq(0).width()
