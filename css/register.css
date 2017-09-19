@@ -1,0 +1,224 @@
+/* 头部样式开始 */
+.header_con {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    zoom: 1;
+    text-align: center;
+}
+.register_header {
+    width: 1000px;
+    overflow: hidden;
+    margin: 10px auto 0px auto;
+    zoom: 1;
+    position: relative;
+}
+
+.register_header .logo {
+    line-height: 82px;
+}
+.register_header .logo img {
+    float: left;
+}
+.register_header .logo .register_headlogo_title {
+    font-family: Helvetica,黑体;
+    font-size: 18px;
+    color: #949292;
+    float: left;
+    padding-left: 10px;
+}
+
+.register_header_phone {
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    line-height: 27px;
+    height: 27px;
+
+}
+.register_header_phone img{
+	float: left;
+}
+.register_header_phone span {
+    font-family: Helvetica,黑体;
+    font-size: 15px;
+    color: #000;
+    float: left;
+}
+
+/* 头部样式结束 */
+
+
+/* 注册部分 */
+.register {
+    background-color: #ecebe7;
+    overflow: hidden;
+    margin: 0 auto;
+        background: url(http://www.5lux.com/vendor/images/5lux/login/zhuce-bg.jpg) no-repeat;
+}
+.register_content{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.register_left {
+    width: 705px;
+    height: 680px;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: -114px;
+    background: url(http://www.5lux.com/vendor/images/5lux/login/zhuce-icon.png) no-repeat;
+
+}
+.register_right {
+    width: 450px;
+    background-color: #fff;
+    float: right;
+    margin-top: 47px;
+    margin-left: 10px;
+    -webkit-box-shadow: #afabab 0px 0px 8px;
+    -moz-box-shadow: #afabab 0px 0px 8px;
+    box-shadow: #afabab 0px 0px 8px;
+}
+
+.register_box {
+    width: 300px;
+    margin: 45px auto;
+    text-align: left;
+    width: 330px;
+}
+
+.register_box ul {
+    display: block;
+    position: relative;
+}
+.re_title_way {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    color: #6d6d6d;
+    font-size: 15px;
+    border-bottom: #ccc solid 1px;
+    text-align: center;
+    font-family: Helvetica,黑体;
+    font-size: 12px;
+    color: #7b7c7c;
+}
+.re_title_way span {
+    height: 25px;
+    line-height: 25px;
+    padding: 2px 20px;
+    border-top-left-radius: 5px 5px;
+    border-top-right-radius: 5px 5px;
+    position: absolute;
+    left: 0;
+    top: -30px;
+}
+.re_method_now {
+    background-color: #000;
+    color: #fff;
+}
+.clear_h32 {
+    height: 32px;
+    line-height: 32px;
+    clear: both;
+    float: none;
+}
+.re_con {
+    padding-left: 2px;
+    height: 64px;
+}
+.register_box li label {
+    width: 72px;
+    float: left;
+    text-align: right;
+    line-height: 32px;
+    height: 32px;
+    vertical-align: middle;
+}
+
+.re_con input {
+    width: 210px;
+    height: 32px;
+    line-height: 32px;
+    vertical-align: middle;
+    float: left;
+    border: 1px solid #ccc;
+}
+.msg_tips {
+    display: inline-block;
+    font-size: 12px;
+    color: #666;
+    line-height: 15px;
+    vertical-align: middle;
+    width: 150px;
+}
+.msg_warning {
+    display: inline-block;
+    font-size: 12px;
+    color: #333;
+    height: 22px;
+    line-height: 22px;
+    vertical-align: middle;
+    width: 210px;
+    border: 1px solid #ff9ba5;
+    background: #fee0e3;
+    margin-left: 72px;
+}
+.get_sms_code {
+    width: 70px;
+    line-height: 25px;
+    height: 25px;
+    border: 1px solid #ccc;
+    color: #000;
+    position: absolute;
+    right: -30px;
+    top: 3px;
+    cursor: pointer;
+    text-align: center;
+}
+.get_sms_code:hover {
+    background: #a78668;
+    color: #fff;
+}
+
+.tongyi {
+    margin-left: 62px;
+    _margin-left: 50px;
+    margin-bottom: 20px;
+}
+.register_btn {
+    width: 210px;
+    display: inline;
+    margin-left: 72px;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 16px;
+    border: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #cf0101;
+}
+.login_re {
+    text-align: right;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 25px;
+    border-bottom: #ccc solid 1px;
+}
+.login_re a {
+    text-decoration: underline;
+    color: #a78668;
+    margin-left: 10px;
+}
+.re_tishi {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.re_tishi span {
+    color: red;
+}
