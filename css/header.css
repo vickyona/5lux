@@ -450,3 +450,176 @@ li.type_5luxli a.type_5lux {
 .divlist03 span {
     background: url(http://www.5lux.com/vendor/images/v30/share02.png) no-repeat -354px -66px;
 }
+/* 二级导航 */
+.leftmenu {
+    width: 130px;
+    display: none;
+    min-height: 585px;
+    position: relative;
+    z-index: 1000;
+    vertical-align: top;
+}
+.leftmenu ul li {
+    vertical-align: top;
+    position: relative;
+    width: 130px;
+    z-index: 1000;
+}
+
+.leftmenu ul li .group {
+    background-color: #fff;
+    filter: alpha(opacity=85);
+    -moz-opacity: 0.85;
+    -khtml-opacity: 0.85;
+    opacity: 0.85;
+    height: 36px;
+    text-align: left;
+    line-height: 36px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 48px;
+}
+
+.nav_brand {
+    background: url(http://www.5lux.com/vendor/images/5lux/brand/brand_category1.png) 15px no-repeat;
+    background-position: -3px -5px;
+}
+.leftmenu ul li .group i {
+    position: absolute;
+    right: 2px;
+    top: 0;
+    height: 36px;
+    width: 20px;
+    display: none;
+    background: url(http://www.5lux.com/vendor/images/v30/share02.png) no-repeat -304px -33px;
+}
+.menu_show {
+    width: 800px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 130px;
+    top: 0px;
+    min-height: 220px;
+}
+.showshop {
+    background-color: #ffffff;
+    min-width: 605px;
+    max-width: 750px;
+    border-bottom: #d7d7d7 1px solid;
+    margin: 10px 0px 10px 20px;
+    float: left;
+    clear: both;
+    overflow: hidden;
+    line-height: 25px;
+}
+.menu_show h2 {
+    float: left;
+    color: #CF0201;
+    width: 105px;
+    font-size: 14px;
+    font-style: normal;
+    padding-left: 25px;
+    text-align: left;
+}
+.menu_show h2 a {
+    font-size: 14px;
+    color: #CF0201;
+}
+.showbag {
+    max-width: 500px;
+    min-height: 25px;
+    line-height: 25px;
+    float: left;
+    display: block;
+}
+.showbag a {
+    color: #757272;
+    font-size: 12px;
+    float: left;
+    margin-right: 10px;
+}
+.showindex {
+    float: left;
+    padding-left: 25px;
+    width: 590px;
+    height: 70px;
+}
+.showindex a {
+    display: block;
+    width: 115px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: #cf0201;
+    margin-top: 20px;
+    float: left;
+    margin-left: 20px;
+}
+.xiangbao {
+    background: url(http://www.5lux.com/vendor/images/5lux/brand/brand_category1.png) 15px no-repeat;
+    background-position: -3px -36px;
+}
+.leftmenu ul li .group i {
+    position: absolute;
+    right: 2px;
+    top: 0;
+    height: 36px;
+    width: 20px;
+    display: none;
+    background: url(/vehttp://www.5lux.com/vendor/images/v30/share02.png) no-repeat -304px -33px;
+}
+
+.meizhuang {
+    background: url(http://www.5lux.com/vendor/images/5lux/brand/brand_category1.png) 15px no-repeat;
+    background-position: -3px -68px;
+}
+.fuzhuang {
+    background: url(http://www.5lux.com/vendor/images/5lux/brand/brand_category1.png) 15px no-repeat;
+    background-position: -3px -100px;
+}
+
+.wanbiao {
+    background: url(http://www.5lux.com/vendor/images/5lux/brand/brand_category1.png) 15px no-repeat;
+    background-position: -3px -132px;
+}
+.peishi {
+    background: url(http://www.5lux.com/vendor/images/5lux/brand/brand_category1.png) 15px no-repeat;
+    background-position: -3px -165px;
+}
+.xiexue {
+    background: url(http://www.5lux.com/vendor/images/5lux/brand/brand_category1.png) 15px no-repeat;
+    background-position: -3px -196px;
+}
+.muying {
+    background: url(http://www.5lux.com/vendor/images/5lux/brand/brand_category1.png) 15px no-repeat;
+    background-position: -3px -228px;
+}
+.meijiu {
+    background: url(http://www.5lux.com/vendor/images/5lux/brand/brand_category1.png) 15px no-repeat;
+    background-position: -3px -261px;
+}
+.meishi {
+    background: url(http://www.5lux.com/vendor/images/5lux/brand/brand_category1.png) 15px no-repeat;
+    background-position: -3px -294px;
+}
+.jiaju {
+    background: url(http://www.5lux.com/vendor/images/5lux/brand/brand_category1.png) 15px no-repeat;
+    background-position: -3px -326px;
+}
+.dianzi {
+    background: url(http://www.5lux.com/vendor/images/5lux/brand/brand_category1.png) 15px no-repeat;
+    background-position: -3px -357px;
+}
+.bangong {
+    background: url(http://www.5lux.com/vendor/images/5lux/brand/brand_category1.png) 15px no-repeat;
+    background-position: -3px -390px;
+}
+.lipin {
+    background: url(http://www.5lux.com/vendor/images/5lux/brand/brand_category1.png) 15px no-repeat;
+    background-position: -3px -422px;
+}
+.haiwai {
+    background: url(http://www.5lux.com/vendor/images/5lux/brand/brand_category1.png) 15px no-repeat;
+    background-position: -3px -458px;
+}
