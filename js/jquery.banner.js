@@ -149,9 +149,15 @@
 			},3000)
 			options.imgs.eq(0).parent().parent().on('mouseenter',function(){
 				clearInterval(that.LOCAL.timer);
+				$('.bn_c').css({
+					display: 'block'
+				});
 			})
 			options.imgs.eq(0).parent().parent().on('mouseleave',function(){
 				clearInterval(that.LOCAL.timer);
+				$('.bn_c').css({
+					display: 'none'
+				});
 				that.LOCAL.timer = setInterval(function(){
 					options.right.trigger('click');
 				},3000)

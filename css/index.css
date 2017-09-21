@@ -32,6 +32,7 @@ html,body{
 }
 #mainslider .bn_c {
     position: absolute;
+    display: none;
 }
 #mainslider .slider_left {
     top: 200px;

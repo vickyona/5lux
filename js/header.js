@@ -58,5 +58,39 @@
 		})
 	});
 
+	//二级导航
+	
+	$('.cata_list').hover(function() {
+		$('.leftmenu').css({
+			display: 'block'
+		});
+		$('body').append('<div id="navwrap"></div>');
+	}, function() {
+		$('.leftmenu').css({
+			display: 'none'
+		});
+		$('#navwrap').remove();
+	});
+	$('.cata_list li').hover(function() {
+		$(this).children('.menu_show').css({
+			display: 'block'
+		}).end()
+		.children('.group').css({
+			opacity: '1'
+		}).find('i').css({
+			display: 'inline'
+		});
+	}, function() {
+		$(this).children('.menu_show').css({
+			display: 'none'
+		}).end()
+		.children('.group').css({
+			opacity: '0.85'
+		}).find('i').css({
+			display: 'none'
+		});
+	});
+
+
 
 })

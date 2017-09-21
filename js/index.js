@@ -7,6 +7,15 @@ $(function () {
 		left:$('.slider_left'),
 		right:$('.slider_right')
 	})
+	$('.m_slider').hover(function() {
+		$('.bn_c').css({
+			display: 'block'
+		});
+	}, function() {
+		$('.bn_c').css({
+			display: 'none'
+		});
+	});
 
 	
 	//brandship
