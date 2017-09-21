@@ -1,8 +1,4 @@
 ;$(function  () {
-	//加载页脚
-	$('#footer_message_bg').load("footer.html");
-	//加载侧边栏
-	$('#right_menu').load("rightMenu.html");
 	$(document).ajaxStart(function() {
 		$Img = $('<img src="http://img.5lux.com.cn/source/js/artdialog/icons/loading.gif">')
 		$("#login_btn").html($Img);
@@ -61,5 +57,4 @@
 		 	})
 	 	}
 	})
-	
 })

@@ -41,6 +41,9 @@
 			options.items.removeClass("change_img_btn_selected").eq(target).addClass("change_img_btn_selected");
 			that.LOCAL.iNow = $(this).index();
 		})
+	}else{
+		//不存在items
+		console.warn("no items")
 	}
 
 	this.LOCAL.move = function(direction,target){
@@ -102,9 +105,8 @@
 				left:0
 			});
 			
-			if (typeof options.items == "object" && options.items.length != 0) {
-				options.items.removeClass("change_img_btn_selected").eq(that.LOCAL.iNow).addClass("change_img_btn_selected");
-			}
+
+			options.items.removeClass("change_img_btn_selected").eq(that.LOCAL.iNow).addClass("change_img_btn_selected");
 		})
 		options.right.on("click",function(){
 			var iNext = 0 ;
@@ -136,9 +138,8 @@
 			.animate({
 				left:0
 			})
-			if (typeof options.items == "object" && options.items.length != 0) {
-				options.items.removeClass("change_img_btn_selected").eq(that.LOCAL.iNow).addClass("change_img_btn_selected");
-			}
+
+			options.items.removeClass("change_img_btn_selected").eq(that.LOCAL.iNow).addClass("change_img_btn_selected");
 		})
 		//自动播放
 		if(options.autoPlay == undefined || options.autoPlay == true){

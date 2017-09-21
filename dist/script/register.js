@@ -1,11 +1,7 @@
 ;$(function(){
-	//加载页脚
-	$('#footer_message_bg').load("footer.html");
-	//加载侧边栏
-	$('#right_menu').load("rightMenu.html");
 	$(document).ajaxStart(function() {
-		// $Img = $('<img src="http://img.5lux.com.cn/source/js/artdialog/icons/loading.gif">')
-		// $("#register_btn").html($Img);
+		$Img = $('<img src="http://img.5lux.com.cn/source/js/artdialog/icons/loading.gif">')
+		$("#register_btn").html($Img);
 	})
 	$('#register_btn').click(function() {
 		$(this).attr("disabled","disabled");
@@ -56,7 +52,6 @@
 	 					}
 		 			}, 500);
 		 			$("#register_btn").removeAttr("disabled").html("注册");
-		 			
 		 		},
 		 		error:function(){
 		 			alert("服务器出问题了，稍后再试吧！");
@@ -66,5 +61,5 @@
 	 	}
 
 	});
-	
+
 })
