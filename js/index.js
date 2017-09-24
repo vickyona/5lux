@@ -1,5 +1,8 @@
 ;
 $(function () {
+
+	
+
 	// 轮播图
 	$('.m_slider').banner({
 		imgs:$('.slider_list'),
@@ -85,14 +88,18 @@ $(function () {
 			this.items = items;
 			this.left = items.parent().siblings('.bx-controls-direction').children('.bx-prev');
 			this.right = items.parent().siblings('.bx-controls-direction').children('.bx-next');
-			this.left.on('click',function(){that.move("left")});
-			this.right.on('click',function(){that.move("right")});
-			
+			this.ismove = false;
+			this.left.on('click',function(){
+				that.move("left");
+			});
+			this.right.on('click',function(){
+				that.move("right");
+			});
 		}
 		move(direction){
 			var that = this;
 			if (direction == "left") {
-				if(this.box.position().left != 0){
+				if(this.box.position().left < 0){
 					this.box.stop().animate({
 						left:that.box.position().left+that.list.width()
 					})
@@ -102,7 +109,7 @@ $(function () {
 				}
 			}
 			if (direction == "right") {
-				if(this.box.position().left != -(this.list.length-1)*this.list.width()){
+				if(this.box.position().left > -(this.list.length-1)*this.list.width()){
 					this.box.stop().animate({
 						left:that.box.position().left-that.list.width()
 					})
@@ -119,27 +126,52 @@ $(function () {
 	new GoodsSlider().init($('#slider4 .sliderbox'),$('#slider4 .sliderbox li'),$('#slider4 .bx-pager-item'));
 	new GoodsSlider().init($('#slider5 .sliderbox'),$('#slider5 .sliderbox li'),$('#slider5 .bx-pager-item'));
 
-	
+	//跳转
 
-	//侧边栏
-	$('.menu_block2>ul>li,.menu_block3>ul>li').hover(function() {
-		$(this).find('.tab-tip').css({
-			display: 'block'
-		});
-	}, function() {
-		$(this).find('.tab-tip').css({
-			display: 'none'
-		});
+	$('.shopcenter li').click(function() {
+		var that = this;
+		var sTop = $(".goodstitle").eq($(this).index()).offset().top;
+		console.log(sTop);
+		$(window).scrollTop(sTop);
+		// $('window').stop().animate({
+		// 	scrollTop:sTop
+		// })
 	});
 
-	$('.tab-logo_top').on('click',function(){
-		$(window).scrollTop(0);
-	})
-	
 	//加载页脚
-	$('#footer_message_bg').load("../html/footer.html");
+	$.ajax({
+		url: 'html/footer.html',	
+		context: $('#footer_message_bg'),
+		dataType: 'html',
+		global:false,
+		success:function(res){
+			$(this).append(res)
+		}
+	});
+	
 	//加载侧边栏
-	//$('#right_menu').load("../html/rightMenu.html");
+	$.ajax({
+		url: 'html/rightMenu.html',	
+		context: $('#right_menu'),
+		dataType: 'html',
+		global:false,
+		success:function(res){
+			$(this).append(res);
+			$('.menu_block2>ul>li,.menu_block3>ul>li').hover(function() {
+					$(this).find('.tab-tip').css({
+						display: 'block'
+					});
+				}, function() {
+					$(this).find('.tab-tip').css({
+						display: 'none'
+					});
+				});
+
+				$('.tab-logo_top').on('click',function(){
+					$(window).scrollTop(0);
+				})
+			}
+	});
 }) 
 
 

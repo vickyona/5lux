@@ -1,6 +1,14 @@
 html,body{
 	overflow-x: hidden;
 }
+.top_ad{
+    margin: 0 auto;
+    display: block;
+    height: 90px;
+    overflow: hidden;
+    background: url('http://img.5lux.com.cn/511/avatar/2016/06/24/14667556976905.jpg');
+    background-position: -218px -271px;
+}
 
 .m_slider{
     background: #000;

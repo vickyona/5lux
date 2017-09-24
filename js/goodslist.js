@@ -1,7 +1,7 @@
 ;$(function () {
 	//加载头部
 	$.ajax({
-		url: 'html/header.html',
+		url: 'header.html',
 		context: $('#header'),
 		dataType: 'html',
 		global:false,
@@ -106,5 +106,40 @@
 		}
 	});
 
+	//加载页脚
+	$.ajax({
+		url: 'footer.html',	
+		context: $('#footer_message_bg'),
+		dataType: 'html',
+		global:false,
+		success:function(res){
+			$(this).append(res)
+		}
+	});
+	
+	//加载侧边栏
+	$.ajax({
+		url: 'rightMenu.html',	
+		context: $('#right_menu'),
+		dataType: 'html',
+		global:false,
+		success:function(res){
+			$(this).append(res);
+			$('.menu_block2>ul>li,.menu_block3>ul>li').hover(function() {
+					$(this).find('.tab-tip').css({
+						display: 'block'
+					});
+				}, function() {
+					$(this).find('.tab-tip').css({
+						display: 'none'
+					});
+				});
 
+				$('.tab-logo_top').on('click',function(){
+					$(window).scrollTop(0);
+				})
+			}
+	});
+
+	
 })

@@ -1,17 +1,48 @@
 ;$(function(){
 	//加载页脚
-	$('#footer_message_bg').load("footer.html");
+	$.ajax({
+		url: 'footer.html',	
+		context: $('#footer_message_bg'),
+		dataType: 'html',
+		global:false,
+		success:function(res){
+			$(this).append(res)
+		}
+	});
+	
 	//加载侧边栏
-	$('#right_menu').load("rightMenu.html");
+	$.ajax({
+		url: 'rightMenu.html',	
+		context: $('#right_menu'),
+		dataType: 'html',
+		global:false,
+		success:function(res){
+			$(this).append(res);
+			$('.menu_block2>ul>li,.menu_block3>ul>li').hover(function() {
+					$(this).find('.tab-tip').css({
+						display: 'block'
+					});
+				}, function() {
+					$(this).find('.tab-tip').css({
+						display: 'none'
+					});
+				});
+
+				$('.tab-logo_top').on('click',function(){
+					$(window).scrollTop(0);
+				})
+			}
+	});
 	$(document).ajaxStart(function() {
-		// $Img = $('<img src="http://img.5lux.com.cn/source/js/artdialog/icons/loading.gif">')
-		// $("#register_btn").html($Img);
+		$Img = $('<img src="http://img.5lux.com.cn/source/js/artdialog/icons/loading.gif">')
+		$("#register_btn").html($Img);
 	})
 	$('#register_btn').click(function() {
 		$(this).attr("disabled","disabled");
 		var $user = $("input[name=username]").val();
 	 	var $password = $("input[name=password]").val();
 	 	var $passwordConfirm = $("input[name=password_confirm]").val();
+	 	var $isChecked = $('input[type=checkbox]').is(':checked');
 	 	var $canSubmit = false;
 	 	if ($user == "") {
 	 		$(".msg_tips").eq(0).addClass('msg_warning').html("请输入用户名");
@@ -50,6 +81,12 @@
 		 					break;
 		 				case "1":
 		 					$(".msg_tips:last").removeClass("msg_warning").html("注册成功！稍后将为您跳转");
+		 					$.cookie("user",$user,{
+	 							expires:15
+	 						})
+	 						$.cookie("password",$password,{
+	 							expires:15
+	 						})
 		 					setTimeout(function(){
 		 						location.href="../index.html"
 		 					},1000)				
