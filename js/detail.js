@@ -1,13 +1,21 @@
-define(["../js/module/load","../js/module/zoom"],function(load){
+define(["../js/module/load","../js/module/zoom"],function(load,zoom){
 	load();
-	var sBox = $('gsimg_box img');
-	var positionBox = $('position_box');
-	var bBox = $('gbimg_box');
-	var bBoxAll = $('b_box_all');
-	var changeImg = $('changeimg li');
 
+	//放大镜
+	
+	//小图
+	var sBox = $('.gsimg_box');
+	//放大镜
+	var positionBox = $('.position_box');
+	//放大部分
+	var bBox = $('.gbimg_box');
+	//大图
+	var bBoxAll = $('.b_box_all');
+	//更换图片
+	var changeImg = $('.changeimg li');
 
-	Zoom.init({
+	//调用
+	zoom.init({
 		sBox:sBox,
 		positionBox:positionBox,
 		bBox:bBox,
