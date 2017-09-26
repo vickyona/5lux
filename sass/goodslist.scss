@@ -87,7 +87,6 @@ body{
 .fsg_box{
 	@extend .center1210;
 	background: #fff;
-    padding-bottom: 10px;
     margin-top:10px;
 }
 
@@ -164,11 +163,12 @@ body{
     width: 86px;
     float: left;
     text-align: center;
+    background:#ebebeb;
     a{
 	    font-weight: bold;
 	    font-size: 13px;
 	    color: #000;
-	    background-color: #ebebeb;
+	    background: #ebebeb;
     }
 }
 .brandcategory_allc_br {
@@ -194,7 +194,7 @@ body{
 	    padding: 0px 7px;
 	    margin: 8px 5px 0 5px;
 	    position: relative;
-	    &:hover{
+	    &:hover,&.all_check{
 	    	background-color: #c69c6d;
     		color: #ffffff;
 
@@ -251,4 +251,121 @@ body{
     zoom: 1;
     background-color: #fff;
     min-height: 45px;
+}
+.list_filter {
+    padding: 9px 9px;
+    background: #fff;
+    color: #666;
+    font-size: 13px;
+} 
+.vlf_box1 {
+    line-height: 25px;
+    height: 25px;
+    float: left;
+    background-color: #fff;
+    display: block;
+    width: 310px;
+    border: 1px solid #c9c9c9;
+    overflow: hidden;
+    li {
+        display: inline-block;
+        float: left;
+        width: 50px;
+        position: relative;
+        font-size: 13px;
+        padding-left: 10px;
+        border-right: 1px solid #c9c9c9;
+        &.sort_desc {
+            background: #c69c6d;
+            color: #fff;
+        }
+        b {
+            line-height: 25px;
+            height: 25px;
+            width: 10px;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 40px;
+            background: url(http://www.5lux.com/vendor/images/v30/brandstore_share.png) no-repeat -314px -230px;
+        }
+    }
+}
+.st_block {
+    @extend .center1210;
+    .stblock_body {      
+        background-color: #fff;
+        dl {
+            overflow: hidden;
+            dd{
+                float:left;
+            }
+        }
+    }
+}
+.pitem {
+    width: 302px;
+    float: left;
+    padding-bottom: 20px;
+}
+.p_inbox {
+    padding: 10px;
+    width: 270px;
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+    overflow: auto;
+    ul{
+        display: block;
+        width: 270px;
+        background: #fff;
+        padding-bottom: 20px;
+        li{
+            text-align:center;
+        }
+    }
+    &:hover{
+        background: #f2f2f2;
+    }
+}
+.pi_img {
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    a{
+        display:block;
+        img{
+            max-width: 267px;
+            height: 267px;
+            display:inline;
+        }
+    }
+    
+}
+.co666 {
+    color: #666;
+}
+
+.fsize12 {
+    font-size: 12px;
+}
+
+.mtop55 {
+    margin-top: 25px;
+}
+.w500 {
+    font-weight: 500;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    max-height: 50px;
+}
+.coc2a67d {
+    color: #c2a67d;
+}
+
+.fsize13 {
+    font-size: 13px;
 }

@@ -136,10 +136,47 @@
 				});
 
 				$('.tab-logo_top').on('click',function(){
-					$(window).scrollTop(0);
+					$('html,body').animate({
+						scrollTop:0
+					})
 				})
 			}
 	});
 
+	//加载列表数据
+	$.ajax({
+		url:"../data/goodslist.json",
+		dataType:'json',
+		success:function(res){
+			var html = "";
+			for(var i = 0; i < res.length ;i++){
+				html += `
+					<dd class="clearfix">
+						<div class="pitem">
+							<div class="p_inbox">
+								<ul>
+									<li class="pi_img">
+	                    				<a href="detail.html" target="_blank" id="${res[i].id}">
+	                                        <img src="${res[i].img}"  alt="${res[i].title}" title="${res[i].title}">
+	                                    </a>
+	                				</li>
+	                				<li class="w500">
+		                                Vera Wang王薇薇
+		                            </li>
+		                            <li class="w500">
+		                                <a href="detail.html" target="_blank" id="${res[i].id}">${res[i].title}</a>
+		                            </li>
+		                            <li class="coc2a67d fsize13">${res[i].price}</li>
+								</ul>
+							</div>
+						</div>
+					</dd>
+				`
+			};
+			console.log(html);
+			$('.stblock_body dl').html(html);
+		}
+	});
+	
 	
 })

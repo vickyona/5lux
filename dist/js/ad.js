@@ -1,6 +1,8 @@
 $(function(){
 	$('#returntop').click(function() {
-		$(window).scrollTop(0);
+		$("html,body").animate({
+			scrollTop:0
+		})
 	});
 	$(".nav ul li").click(function(){
 		var titleNum = $(this).index();

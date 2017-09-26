@@ -1,0 +1,77 @@
+#gdetail_con {
+  width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+  zoom: 1;
+  margin-top: 15px; }
+
+.gimg_box {
+  width: 480px;
+  position: relative; }
+  .gimg_box img {
+    width: 100%;
+    height: 100%; }
+
+.gsimg_box {
+  border: solid 1px #EAEAEA;
+  width: 480px;
+  height: 480px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  padding: 0; }
+  .gsimg_box img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto; }
+  .gsimg_box .mark_box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10; }
+  .gsimg_box .position_box {
+    width: 100px;
+    height: 100px;
+    background-image: url("http://img550.5lux.com.cn/2017/05/15/hi/149481758154_611x611.jpg");
+    background-size: 478px 478px;
+    background-position: 0 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    display: none; }
+
+.gbimg_box {
+  width: 478px;
+  height: 478px;
+  position: absolute;
+  left: 500px;
+  top: 0px;
+  display: none;
+  overflow: hidden; }
+  .gbimg_box .b_box_all {
+    position: absolute;
+    width: 2390px;
+    height: 2390px;
+    left: 0; }
+
+.changeimg {
+  width: 480px;
+  padding: 25px 0;
+  float: left; }
+  .changeimg li {
+    width: 87px;
+    height: 87px;
+    padding: 0 3px;
+    display: inline-block; }
+    .changeimg li .gimg_wrap {
+      height: 85px;
+      width: 83px;
+      overflow: hidden;
+      position: relative;
+      border: 1px solid #ccc; }

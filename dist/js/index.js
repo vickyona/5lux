@@ -168,7 +168,10 @@ $(function () {
 				});
 
 				$('.tab-logo_top').on('click',function(){
-					$(window).scrollTop(0);
+					
+					$('html,body').animate({
+						scrollTop:0
+					})
 				})
 			}
 	});
