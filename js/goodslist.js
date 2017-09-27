@@ -152,7 +152,7 @@
 			for(var i = 0; i < res.length ;i++){
 				html += `
 					<dd class="clearfix">
-						<div class="pitem">
+						<div class="pitem" id="${res[i].id}">
 							<div class="p_inbox">
 								<ul>
 									<li class="pi_img">
@@ -173,10 +173,16 @@
 					</dd>
 				`
 			};
-			console.log(html);
+			//console.log(html);
 			$('.stblock_body dl').html(html);
+			//存储cookie跳转到指定页面
+			$('.stblock_body dl').on("click",".pitem",function(){
+				//console.log(this.id);
+				$.cookie('goosId',this.id);
+			})
 		}
 	});
 	
 	
+
 })

@@ -1,26 +1,30 @@
-define(["../js/module/load","../js/module/zoom"],function(load,zoom){
+define(["../js/module/load","../js/module/zoom","../js/module/slider","../js/jquery.cookie",'../js/module/shopCar'],function(load,zoom,slider,shopCar){
+	//加载页面
 	load();
-
+	//tab();
 	//放大镜
-	
-	//小图
-	var sBox = $('.gsimg_box');
-	//放大镜
-	var positionBox = $('.position_box');
-	//放大部分
-	var bBox = $('.gbimg_box');
-	//大图
-	var bBoxAll = $('.b_box_all');
-	//更换图片
-	var changeImg = $('.changeimg li');
 
 	//调用
 	zoom.init({
-		sBox:sBox,
-		positionBox:positionBox,
-		bBox:bBox,
-		bBoxAll:bBoxAll,
-		changeImg:changeImg
+		//小图
+		sBox:$('.gsimg_box'),
+		//放大镜
+		positionBox:$('.position_box'),
+		//放大部分
+		bBox:$('.gbimg_box'),
+		//大图
+		bBoxAll:$('.b_box_all'),
+		//更换图片
+		changeImg:$('.changeimg li')
 	})
+
+	slider.init({
+		left:$('.btn_l'),
+		right:$('.btn_r'),
+		pagination:$('.pagination'),
+		list:$('.banner-list'),
+		box:$('#gd-banner')
+	});
+	
 })
 	

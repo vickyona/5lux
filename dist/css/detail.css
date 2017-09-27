@@ -346,12 +346,17 @@
 .wyshb {
   background-image: url(http://www.5lux.com/vendor/images/good/detail_desc/guarantee.png); }
 
-#gd_nav {
+.gd_nav {
   top: 0px;
   left: 0px;
   z-index: 3;
   position: relative;
   width: 100%; }
+  .gd_nav.fix {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99; }
 
 .nav_main {
   width: 1100px;
@@ -361,7 +366,8 @@
 .navm_l {
   width: 198px;
   border: 1px solid #c9c9c9;
-  float: left; }
+  float: left;
+  background: #fff; }
   .navm_l .navm_l_head {
     height: 33px;
     line-height: 33px;
@@ -382,7 +388,8 @@
   width: 868px;
   float: left;
   margin-left: 30px;
-  border: 1px solid #c9c9c9; }
+  border: 1px solid #c9c9c9;
+  background: #fff; }
   .navm_r .switch li {
     display: inline-block;
     width: 198px;
@@ -516,6 +523,8 @@
   padding-left: 30px;
   padding-top: 20px;
   overflow: hidden; }
+  .goodsContent_right .hide {
+    display: none; }
 
 .product-rec-banner {
   width: 100%;
@@ -549,3 +558,112 @@
 
 .fr {
   float: right; }
+
+.common-detail-warp .common-title {
+  width: 870px;
+  height: 98px; }
+  .common-detail-warp .common-title img {
+    height: 100%; }
+
+#goodstory-box {
+  border: 1px solid #CCDDFF;
+  width: 850px;
+  height: 244px;
+  margin: 0 auto;
+  background: #F5F5F5; }
+  #goodstory-box .goodstory-left {
+    width: 410px;
+    height: 244px;
+    float: left; }
+  #goodstory-box .goodstory-right {
+    width: 435px;
+    height: 244px;
+    float: right;
+    overflow: hidden; }
+  #goodstory-box .goodstory-title {
+    width: 432px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    overflow: hidden; }
+  #goodstory-box .goodstory-content {
+    width: 425px;
+    height: auto;
+    text-indent: 2em;
+    padding: 5px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8; }
+
+#goodsparms-box .goods-parms-list {
+  display: block;
+  width: 280px;
+  height: 28px;
+  line-height: 28px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-top: 0;
+  float: left;
+  background: #f2f2f2;
+  text-indent: 1.66666666em; }
+
+#goodsimgshow-box .goodsimgshow-content {
+  display: block;
+  margin: 0 60px;
+  text-align: center; }
+  #goodsimgshow-box .goodsimgshow-content img {
+    max-width: 750px; }
+
+#realproduct-box {
+  overflow: hidden; }
+
+#gd-banner {
+  width: 870px;
+  height: 314px;
+  position: relative;
+  overflow: hidden; }
+  #gd-banner .banner-list {
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+    left: 0;
+    top: 0; }
+  #gd-banner img {
+    width: 100%; }
+  #gd-banner .num {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    text-align: center;
+    z-index: 3;
+    line-height: 10px; }
+    #gd-banner .num .pagination {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 0 5px;
+      background-size: 10px 10px;
+      background-repeat: no-repeat;
+      background-image: url(http://www.5lux.com/vendor/images/good/detail_desc/banner_dot.png);
+      cursor: pointer; }
+    #gd-banner .num .active {
+      background-image: url(http://www.5lux.com/vendor/images/good/detail_desc/banner_dot_selected.png); }
+  #gd-banner .btn {
+    position: absolute;
+    width: 28px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-size: 28px 48px;
+    top: 133px;
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer; }
+  #gd-banner .btn_l {
+    background-image: url(http://www.5lux.com/vendor/images/good/detail_desc/banner_flip_left.png);
+    left: -38px; }
+  #gd-banner .btn_r {
+    background-image: url(http://www.5lux.com/vendor/images/good/detail_desc/banner_flip_right.png);
+    right: -38px; }

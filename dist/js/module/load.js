@@ -38,24 +38,7 @@ define(function(){
 							display:'none'
 						})
 					}
-				)
-				$('.hm_cart').hover(function() {
-					$('.hm_cart dl b').css({
-						display: 'inline-block'
-					})
-					$('.hm_cart .shopping_bag_cont').css({
-						display: 'inline-block'
-					})
-				}, function() {
-					$('.hm_cart dl b').css({
-						display: 'none'
-					})
-					$('.hm_cart .shopping_bag_cont').css({
-						display: 'none'
-					})
-				});
-
-
+				);
 				$('#icon_wrap li').hover(function() {
 					$(this).stop().animate({
 						width:'140'
@@ -140,6 +123,45 @@ define(function(){
 						$(window).scrollTop(0);
 					})
 				}
+		});
+
+		
+		//加载对应图片和标题
+		$.ajax({
+			url:"../data/goodslist.json",
+			dataType:'json',
+			success:function(res){
+				var goosId = $.cookie('goosId');
+				//console.log(goosId);
+				if (goosId) {
+					$('.gsimg_box img').attr("src",res[goosId].img);
+					$('.b_box_all img').attr("src",res[goosId].img);
+					$('.gimg_wrap').eq(0).attr("src",res[goosId].img);
+					$('.position_box').css('backgroundImage','url('+res[goosId].img+')');
+					$('#gd_title').html(res[goosId].title);
+					$('#gd_price').html(res[goosId].price);
+					$('.goods_add_fav').attr('goodsId',goosId);
+				}
+				
+			}
+		});
+		//悬浮导航
+		$(window).scroll(function(){
+			var navTop = $('#gd_main').offset().top;
+			var windowTop = $(window).scrollTop();
+			if (windowTop >= navTop) {
+				$('.gd_nav').addClass("fix");
+			}else{
+				$('.gd_nav').removeClass("fix");
+			}
+		});
+		//选项卡
+		$('.switch li').click(function() {
+			
+			$('.switch li').removeClass('_ed');
+			$(this).addClass('_ed');
+			$('.goodsContent_right>ul>li').addClass('hide');
+			$('.goodsContent_right>ul>li').eq($(this).index()).removeClass("hide");
 		});
 	}
 	return load;

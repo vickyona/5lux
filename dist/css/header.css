@@ -337,6 +337,66 @@
 .hm_cart .shopping_bag_cont{
     display: none;
 }
+.hm_cartbox .hmc_head{
+    text-align: left;
+    font-size: 13px;
+    display: none;
+    padding-bottom: 5px;
+    line-height: 20px;
+}
+.hmc_box {
+    padding: 15px 0;
+    border-top: 1px solid #dfdfdf;
+    background-color: #fff;
+}
+.hmc_box .hmcb_i{
+    margin-top: 5px;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #c9c9c9;
+    overflow: hidden;
+    float: left;
+}
+.hmcb_i img{
+    width:48px;
+}
+.hmc_box .hmcb_l {
+    float: left;
+    width: 180px;
+    padding-left: 10px;
+
+}
+.hmcb_l li {
+    text-align: left;
+    line-height: 20px;
+    height: 20px;
+    width: 190px;
+    overflow:hidden;
+}
+.hmcb_l span {
+    color: #d00000;
+}
+.hmc_foot {
+    height: 50px;
+    background: #f2f2f2;
+    text-align: left;
+    line-height: 20px;
+    padding: 10px 10px;
+    float:left;
+    width:100%;
+}
+.cod00000 {
+    color: #d00000;
+}
+.w500 {
+    font-weight: 500;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    max-height: 50px;
+}
 /* 导航栏 */
 .nav{
     width: 100%;

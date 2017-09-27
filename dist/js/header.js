@@ -10,7 +10,7 @@
 		
 			$(".h_mobile").click(function(){
 				location.href="http://www.5lux.com/download"
-			})
+			});
 			$(".h_mobile").hover(function(){
 					$('.hm_qr').css({
 						display:'block',
@@ -22,7 +22,7 @@
 						clear:'both'
 					})
 				}
-			)
+			);
 			$('.h_my5lux').hover(function(){
 					$('.h_my5lux dt').addClass('show');
 					$('.h_my5lux dt span').css({
@@ -37,7 +37,7 @@
 						display:'none'
 					})
 				}
-			)
+			);
 			$('.hm_cart').hover(function() {
 				$('.hm_cart dl b').css({
 					display: 'inline-block'
@@ -53,8 +53,6 @@
 					display: 'none'
 				})
 			});
-
-
 			$('#icon_wrap li').hover(function() {
 				$(this).stop().animate({
 					width:'140'
